@@ -1,0 +1,10 @@
+[Unit]
+Description=Postgres Backup to S3 Timer
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=60m
+Unit=postgres-backup-s3.service
+
+[Install]
+WantedBy=timers.target

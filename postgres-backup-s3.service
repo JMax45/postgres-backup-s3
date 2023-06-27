@@ -1,0 +1,9 @@
+[Unit]
+Description=Postgres Backup to S3 Timer Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/postgres-backup-s3
+
+[Install]
+WantedBy=multi-user.target
